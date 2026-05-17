@@ -5,6 +5,9 @@ __pycache__/
 *.pyo
 .ipynb_checkpoints/
 
+# Locally downloaded datasets (e.g. NCHS data via resources/unit_3/prep.py)
+resources/*/data/
+
 # macOS
 .DS_Store
 
