@@ -7,6 +7,8 @@ __pycache__/
 
 # Locally downloaded datasets (e.g. NCHS data via resources/unit_3/prep.py)
 resources/*/data/
+# CSV symlinks into other unit dirs (e.g. resources/unit_6/1971.csv.gz)
+resources/*/*.csv.gz
 
 # macOS
 .DS_Store
