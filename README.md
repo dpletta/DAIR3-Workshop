@@ -25,6 +25,43 @@ The DAIR³ team and instructors include faculty and staff research leaders from:
 - Jackson State University
 - University of Texas San Antonio
 
+## Python environment and API keys
+
+This project uses a root-level `.env` file for development secrets (see `.env.example`). The file is gitignored.
+
+1. Create the virtual environment and install dependencies:
+
+   ```bash
+   uv sync
+   ```
+
+2. Copy `.env.example` to `.env` and add your API keys.
+
+3. Install the automatic loader (run again if you recreate `.venv`):
+
+   ```bash
+   .venv/bin/python scripts/install_venv_env_hook.py
+   ```
+
+4. Activate the venv in your terminal (this injects `.env` into the shell):
+
+   ```bash
+   source .venv/bin/activate
+   ```
+
+After activation, `echo $OPENAI_API_KEY` (and other keys from `.env`) should be set in that terminal session. Deactivating the venv unsets those variables.
+
+Python processes started in that shell inherit the same environment. Jupyter notebooks also load `.env` via `.ipython/profile_default/startup/`.
+
+To load manually in a script or notebook:
+
+```python
+from env_loader import load_project_env
+load_project_env()
+```
+
+Restart existing Jupyter kernels after changing `.env`.
+
 ## Repository Structure
 
 ```
