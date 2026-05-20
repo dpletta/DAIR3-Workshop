@@ -1,13 +1,13 @@
 import os
 
-from langchain.chains import LLMChain
+from langchain_classic.chains import LLMChain
 from langchain_core.prompts import (
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
     MessagesPlaceholder,
 )
 from langchain_core.messages import SystemMessage
-from langchain.chains.conversation.memory import ConversationBufferWindowMemory
+from langchain_classic.memory import ConversationBufferWindowMemory
 from langchain_groq import ChatGroq
 
 
