@@ -23,10 +23,12 @@ RANDOM_STATE = 42
 pd.options.plotting.backend = "plotly"
 pio.templates["palatino_white"] = go.layout.Template(pio.templates["plotly_white"])
 pio.templates["palatino_white"].layout.font.family = "Palatino, Palatino Linotype, Book Antiqua, serif"
+pio.templates["palatino_white"].data.scatter = [go.Scatter(marker={"size": 8})]
+pio.templates["palatino_white"].data.scattergl = [go.Scattergl(marker={"size": 8})]
 pio.templates.default = "palatino_white"
 px.defaults.template = "palatino_white"
-px.defaults.width = 900
-px.defaults.height = 500
+px.defaults.width = 840
+px.defaults.height = 460
 
 
 def display_df(df, rows=10):

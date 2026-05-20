@@ -2,6 +2,7 @@
 #import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
 #import themes.simple: *
 #show: simple-theme.with(aspect-ratio: "16-9")
+#show link: set text(fill: blue)
 
 = Rigorous Statistical Design
 
@@ -11,6 +12,11 @@ Kerby Shedden\
 Professor of Statistics\
 University of Michigan
 
+== Python notebook
+
+Many of the methods and analyses in this notebook are implemented in 
+#link("https://github.com/DAIR3/DAIR3-Workshop/blob/main/resources/unit_3/birthweight.ipynb")[this] Python notebook.
+
 == Learning objectives 1
 
 - Internalize the state of scientific knowledge about a health related research topic
@@ -18,8 +24,6 @@ University of Michigan
 - Propose creative, original, meaningful, and tractable research aims
 - Use appropriate terminology to describe aims, data, and methods
 - Communicate concisely and rigorously about results and findings
-
-\
 
 All discussion will be centered on the NCHS birth data
 
@@ -33,7 +37,7 @@ All discussion will be centered on the NCHS birth data
   interactions).
 - Causes are mostly out of scope for us as we do not measure most of the likely _root causes_;
   however we measure some plausible _correlates_ that _explain variation_
-  in birth weight; these may provide some insight about underlying root causes.
+  in birth weight; these may provide some insight into underlying root causes.
 
 == NCHS birth weight dataset
 
