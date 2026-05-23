@@ -12,6 +12,7 @@ certifi==2025.4.26
 cffi==2.0.0
 charset-normalizer==3.4.2
 choreographer==1.2.1
+chromadb>=0.5.0
 click==8.3.3
 colorama==0.4.6
 contourpy==1.3.2
@@ -57,7 +58,6 @@ langsmith==0.3.42
 libpysal==4.14.1
 librt==0.8.1
 logistro==2.0.1
--e git+https://github.com/biomathematicus/Lunar.git@2eaa1d4289ca9791b1e4d56e7c9acba18bd9ba22#egg=lunar&subdirectory=python
 lxml==6.0.1
 mapclassify==2.10.0
 MarkupSafe==3.0.3
